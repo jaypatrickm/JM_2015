@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JM2015</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<%= yield :head %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+	$( document ).ready(function(){
+		<%= yield :jquery %>
+	  	$(".button-collapse").sideNav();
+	});
+	</script>
 </head>
 <body>
+	<nav class="grey lighten-5 z-depth-0">
+	    <div class="nav-wrapper">
+	      <a href="#!" id="brand-logo" class="brand-logo grey-text text-darken-4">JM</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html" class="black-text">Work</a></li>
+	        <li><a href="badges.html" class="black-text">Projects</a></li>
+	        <li><a href="collapsible.html" class="black-text">About</a></li>
+	        <li><a href="mobile.html" class="black-text">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html" class="black-text">Work</a></li>
+	        <li><a href="badges.html" class="black-text">Projects</a></li>
+	        <li><a href="collapsible.html" class="black-text">About</a></li>
+	        <li><a href="mobile.html" class="black-text">Contact</a></li>
+	      </ul>
+	    </div>
+	</nav>
 
 <%= yield %>
 

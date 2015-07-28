@@ -1,0 +1,43 @@
+<% content_for :head do %>
+	<title>JAYPATRICK MANALANSAN : FULL STACK DEVELOPER</title>
+	<meta name='description' content='JAYPATRICK MANALANSAN FULL STACK WEB DEVELOPER WEB DESIGNER' />
+<% end %>
+<% content_for :jquery do %>
+	$('.parallax').parallax();
+<% end %>
+<div class="parallax-container">
+	<div class="parallax"><%= image_tag "bg-1-2.jpg" %></div>
+	<div class="row headline-bio">
+		<div class="col s12 white-text center-align">
+			<%= image_tag("me-1.png", :class => "circle center-align responsive-img") %>
+			<h4 class="center-align">JAYPATRICK MANALANSAN</h4>
+			<h5 class="flow-text center-align">FULL STACK DEVELOPER & DESIGNER</h5>
+		</div>
+	</div>
+</div>
+<div class="section white">
+	<div class="row container">
+		<h5 class="title header grey-text text-lighten-1 center-align">Work while at <a href="#">Insteo</a></h5>
+		<div class="col s12 m6">
+			<div class="project-container">
+				<div class="project-images">
+					<%= image_tag("QMY-WF-1.jpg", :class => "responsive-img") %>
+				</div>
+				<div class="project-controls">
+					<a href="#">Prev</a> | <a href="#">Next</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6">
+			<h3>THE QUEEN MARY SHIP WAYFINDING & TIMELINE</h3>
+			<p class="work-technologies">HTML5, CSS3, JS, JQuery, Ajax</p>
+			<p class="work-role">Designer and Programmer</p>
+  			<p class="work-description">A luxurious cruise ship turned hotel permanently docked in Long Beach, CA, the Queen Mary Ship asked Insteo to build a touchscreen kiosk to show a map, history, various events, stores and restaurants. I had a role in the design of the wayfinder and timeline and served as the main programmer. It is currently being displayed on the ship.</p>
+  			<a class="work-link" href="#" target="_blank">+ CLICK TO VIEW</a>
+		</div>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><%= image_tag "bg-2.jpg" %></div>
+</div>
+

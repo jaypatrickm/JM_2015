@@ -1,0 +1,41 @@
+// Place all the styles related to the Mains controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+    font-family: 'Montserrat Regular', sans-serif;
+  }
+ h4, .brand-logo {
+ 	font-family: 'Montserrat Regular', sans-serif;
+ }
+
+ h5 {
+ 	font-family: 'Montserrat Hairline', sans-serif;
+ }
+
+ h5.title {
+ 	font-family: 'Montserrat Regular', sans-serif;
+ }
+
+ h3 {
+ 	font-family: 'Montserrat Black', sans-serif;
+ }
+ p {
+ 	font-family: 'Montserrat Regular', sans-serif;
+ }
+
+ nav a#brand-logo {
+ 	padding: 0 10px;
+ }
+
+ div.headline-bio {
+ 	height: 240px;
+ 	padding: 37px 0;
+ }
+
+ div.parallax-container {
+ 	height: 300px;
+ }
+
+ div.project-container {
+ 	margin-top: 28px;
+ }
