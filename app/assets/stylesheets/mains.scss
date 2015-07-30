@@ -39,3 +39,25 @@ html {
  div.project-container {
  	margin-top: 28px;
  }
+
+ .hide {
+ 	display: none;
+ }
+
+ .proj-icon {
+ 	height: 32px;
+ 	width: auto;
+ 	margin: 5px;
+ }
+
+ .video-container {
+ height: -1px !important;
+ }
+
+ .works {
+ display: inline-block;
+ }
+
+ div#work-container {
+ overflow: hidden;
+ }

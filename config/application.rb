@@ -24,5 +24,7 @@ module JM2015
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
   end
+
 end
