@@ -2,105 +2,13 @@
 	<title>JAYPATRICK MANALANSAN : FULL STACK DEVELOPER</title>
 	<meta name='description' content='JAYPATRICK MANALANSAN FULL STACK WEB DEVELOPER WEB DESIGNER' />
 <% end %>
-<% content_for :jquery do %>
-	$('.parallax').parallax();
-<% end %>
-<div class="parallax-container">
-	<div class="parallax"><%= image_tag "bg-1-2.jpg" %></div>
-	<div class="row headline-bio">
-		<div class="col s12 white-text center-align">
-			<%= image_tag("me-1.png", :class => "circle center-align responsive-img") %>
-			<h4 class="center-align">JAYPATRICK MANALANSAN</h4>
-			<h5 class="flow-text center-align">FULL STACK DEVELOPER & DESIGNER</h5>
-		</div>
-	</div>
-</div>
-<div class="section white">
-	<div class="row container">
-		<h5 class="title header grey-text text-lighten-1 center-align">Work while at <a href="#">Insteo</a></h5>
-		<div id="work-container" class="col s12 m12">
-			<div id="works-wide">
-			<div id="work1" class="col m12">
-				<h3>THE QUEEN MARY SHIP WAYFINDING & TIMELINE TOUCHSCREEN</h3>
-				<%= video_tag("QMY-DEMO.mp4", :class =>'responsive-video', controls: true, autobuffer: true, autoplay: true, preload: 'metadata') %>
-				<div class="col s12 m12">
-				<%= image_tag("html5-icon.png", :class => "proj-icon") %>
-				<%= image_tag("css3-icon.png", :class => "proj-icon") %>
-				<%= image_tag("js-icon.png", :class => "proj-icon") %>
-				<%= image_tag("jquery-icon.png", :class => "proj-icon") %>
-				<p class="work-role">Role</p>
-				<p class="work-roles">Programmer, Designer</p>
-				<p class="work-challenge">Task</p>
-	  			<p class="work-description">A luxurious cruise ship turned hotel permanently docked in Long Beach, CA, the Queen Mary Ship asked Insteo to build a touchscreen kiosk to show a map, timeline, various events, stores and restaurants.</p>
-	  			<p class="work-description">Working with the CEO at Insteo, I was in charge of programming the project using the existing apps and technologies Insteo offered and designing the wayfinder to match the 1920s decor of the interior of the ship.</p>
-	  			<p class="work-description">One of the biggest challenges I faced programmatically was incorporating touch events that would not only scroll to different sections of the timeline, but also alert the bottom visual marker to scroll to the current part of the timeline. I used jQuery Swipe to accomplish the touch feature and created my own javascript for the animated visual graphic.</p>
-	  			<p class="work-description">The design of the timeline and wayfinder is inspired by the ship itself. I used a beech wood graphic to keep the design uniform with the ships style, since it is used throughout the ship, and was chosen for the kiosk stand the screen is held on. The timeline's guide at the bottom is designed to look like the brass ship controls that you could see in the engine room of the ship. I felt that this would be a great way to tie in the viewer as the controller of the timeline.</p>
-	  			<p class="work-description">The kiosk earned Insteo a Gold Apex Award at the 2014 Digital Signage Expo in Hospitality.<br> The project is currently displayed aboard the Queen Mary Ship in Long Beach, CA.</p>
-	  			<a class="work-link" href="#" target="_blank">+ CLICK TO VIEW</a>
-		  		</div>
-			</div>
-		  	<div id="work2" class="col m12">
-				<h3>PETSMART PETBOARD TOUCH</h3>
-				<%= video_tag("PETSMART-DEMO.mp4", :class =>'responsive-video', controls: true, autobuffer: true, autoplay: true, preload: 'metadata') %>
-				<div class="col s12 m12">
-				<%= image_tag("html5-icon.png", :class => "proj-icon") %>
-				<%= image_tag("css3-icon.png", :class => "proj-icon") %>
-				<%= image_tag("js-icon.png", :class => "proj-icon") %>
-				<%= image_tag("jquery-icon.png", :class => "proj-icon") %>
-				<p class="work-role">Role</p>
-				<p class="work-roles">Programmer</p>
-				<p class="work-challenge">Task</p>
-	  			<p class="work-description">Insteo worked with a PetSmart branch to create an in-store ipad touchscreen application to help generate more interest in their pet adoptions, events, social media, and store sales.</p>
-	  			<p class="work-description">Working with the Insteo team, I was the lead programmer to create the product using the current apps and technologies within the Insteo library.</p>
-	  			<p class="work-description">Creating and timing animations of separate apps to work altogether proved to be the main concern of the project. Insteo's apps are offered as separate entities you can plug and play in different environments. This meant I had to edit and customize the apps individually, keep track of the number of scripts or plugins being used, and animate the iframe containers. The inclusion of multiple apps and scripts meant a lot of troubleshooting to ensure the product would be able to run smoothly for this round of prototyping.</p>
-	  			<a class="work-link" href="#" target="_blank">+ CLICK TO VIEW</a>
-		  		</div>
-		  	</div>
-		  	<div id="work3" class="col m12">
-				<h3>Ozio Touch</h3>
-				<%= video_tag("OZIO-DEMO_4.mp4", :class =>'responsive-video', controls: true, autobuffer: true, autoplay: true, preload: 'metadata') %>
-				<div class="col s12 m12">
-				<%= image_tag("html5-icon.png", :class => "proj-icon") %>
-				<%= image_tag("css3-icon.png", :class => "proj-icon") %>
-				<%= image_tag("js-icon.png", :class => "proj-icon") %>
-				<%= image_tag("jquery-icon.png", :class => "proj-icon") %>
-				<p class="work-role">Role</p>
-				<p class="work-roles">Programmer, Designer</p>
-				<p class="work-challenge">Task</p>
-	  			<p class="work-description">Ozio, an operation of commercial massage chairs, asked Insteo to create a touchscreen interface to accompany their chairs. The chairs would be placed inside public malls and the touchscreen would give them options for lengths of massages and serve as a form of entertainment.</p>
-	  			<p class="work-description">I was the main programmer and designer that worked with our CEO and Ozio client for this prototype.</p>
-	  			<p class="work-description">The inspiration for this design came from the flat-design trend current in tech. I chose this style because I felt that the amount of content in such a small screen would benefit from a minimalistic approach. I also thought of creating different themes so that the user could select a relaxing background to accent their time on the chair.</p>
-	  			<p class="work-description">The most intricate parts programmatically were creating the CSS3 transitions for each button. Once I figured out a good slide and fade, I was able to repeat it again uniformly. I intergrated and edited the design of the music and video player with the jQuery JPlayer plugin.</p>
-	  			<a class="work-link" href="#" target="_blank">+ CLICK TO VIEW</a>
-		  		</div>
-		  	</div>
-		  	<div id="work4" class="col m12">
-				<h3>Loop Animated Ad</h3>
-				<div class="row">
-				<div class="col s12 m5">
-				<%= video_tag("LOOP-ANIMAD-DEMO_1.mp4", :class =>'', controls: true, autobuffer: true, autoplay: true, preload: 'metadata', height: 'auto', width: '100%') %>
-				</div>
-				<div class="col s12 m7">
-				<%= image_tag("html5-icon.png", :class => "proj-icon") %>
-				<%= image_tag("css3-icon.png", :class => "proj-icon") %>
-				<%= image_tag("js-icon.png", :class => "proj-icon") %>
-				<%= image_tag("jquery-icon.png", :class => "proj-icon") %>
-				<p class="work-role">Role</p>
-				<p class="work-roles">Programmer, Designer</p>
-				<p class="work-challenge">Task</p>
-	  			<p class="work-description">Insteo creates digital signs for companies to use for their own products. I was tasked with created an animated sign for displaying products for the convenient store Loop.</p>
-	  			<p class="work-description">I was the main programmer and designer for this project.</p>
-	  			<p class="work-description">For this project, I was mainly concerned with the way the content would be prepared and pushed to this application. I wanted this sign to be easy to use and very skinnable. I chose to place the products in the center of the screen and a little bit higher on the y-axis so that all images just had to be centered on a vertical 1920 by 1080 png, the size used in all Insteo apps. I wanted the product to at least be above the middle but had to be sure it couldn't be too close to the top, so that it wouldn't touch the name of the products. I wouldn't know what names each product would have, but I allowed plenty of room because sometimes the client would list sales not just product names. The secondary text and price are below the product image on geometric shapes so that the text can be easily seen from a distance. The colors and background are all customizable.</p>
-	  			<p class="work-description">All Insteo content is pulled from a database and then attached to the html with jQuery. I used jQuery to animate the sign.</p>
-	  			<a class="work-link" href="#" target="_blank">+ CLICK TO VIEW</a>
-		  		</div>
-			  	</div>
-			  </div>
-		  	</div>
-		</div>
-	</div>
-</div>
-<div class="parallax-container">
-	<div class="parallax"><%= image_tag "bg-2.jpg" %></div>
-</div>
+<% content_for :body do %>
+<main>
+		<h1>Full-Screen Pushing Navigation</h1>
 
+		<p>A full page menu, that replaces the current content by pushing it off the screen.</p>
+
+</main>
+<div class="cd-cover-layer"></div>
+<div class="cd-loading-bar"></div>
+<% end %>

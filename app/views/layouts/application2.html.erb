@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= yield :head %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+	$( document ).ready(function(){
+		<%= yield :jquery %>
+	  	$(".button-collapse").sideNav();
+	  	$('.parallax').parallax();
+		
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="navbar-fixed">
+			<nav class="teal z-depth-1">
+			    <div class="nav-wrapper">
+			      <a href="<%= root_path %>" id="brand-logo" class="brand-logo white-text">JM</a>
+			      <a href="#" data-activates="mobile-demo" class="button-collapse white-text mobile-nav-menu"><i class="material-icons">menu</i></a>
+			      <ul class="right hide-on-med-and-down">
+			        <li><a href="sass.html" class="white-text">Work</a></li>
+			        <li><a href="badges.html" class="white-text">Projects</a></li>
+			        <li><a href="collapsible.html" class="white-text">About</a></li>
+			        <li><a href="mobile.html" class="white-text">Contact</a></li>
+			      </ul>
+			      <ul class="side-nav" id="mobile-demo">
+			        <li><a href="sass.html" class="white-text">Work</a></li>
+			        <li><a href="badges.html" class="white-text">Projects</a></li>
+			        <li><a href="collapsible.html" class="white-text">About</a></li>
+			        <li><a href="mobile.html" class="white-text">Contact</a></li>
+			      </ul>
+			    </div>
+			</nav>
+		</div>
+	</header>
+	<div class="parallax-container">
+		<div class="parallax"><%= image_tag "bg-2.jpg" %></div>
+		<div class="row headline-bio">
+			<div class="col s12 teal-text accent-3-text center-align">
+				<%= image_tag("me-1.png", :class => "circle center-align responsive-img") %>
+				<h1 class="center-align flow-text header-name">JAYPATRICK MANALANSAN</h1>
+				<h2 class="flow-text center-align header-title">FULL STACK DEVELOPER</h2>
+			</div>
+		</div>
+	</div>
+	<div class="section white">
+		<div class="row">
+			<div class="col s12 m12 l6 offset-l3 work-container min"><%= yield :main_column %></div>
+			<div class="col s12 m12 l6 offset-l3 min"><%= yield :side_column %></div>
+		</div>
+	</div>
+	<div class="parallax-container">
+		<div class="parallax"><%= image_tag "bg-4.jpg" %></div>
+	</div>
+	<div class="section white">
+		<div class="row">
+			<div class="col s12 m12 l12 min"><%= yield :about %></div>
+		</div>
+	</div>
+</body>
+</html>

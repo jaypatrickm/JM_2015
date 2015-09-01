@@ -1,63 +1,346 @@
 // Place all the styles related to the Mains controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*** MAIN ***/
+
 html {
     font-family: 'Montserrat Regular', sans-serif;
+}
+
+h1.header-name {
+	font-family: 'Montserrat Regular', sans-serif;
+}
+
+	h1.header-name {
+		font-size: 1.5rem;
+		margin-bottom: 0.7rem;
+		margin-top: 0.7rem;
+	}
+
+h2 {
+	font-family: 'Montserrat Hairline', sans-serif;
+}
+
+	h2.header-title {
+		margin-top: 0;
+		font-size: 2rem;
+		font-family: 'Montserrat Hairline', sans-serif;
+	}
+
+h3.work-header {
+	font-family: 'Montserrat Regular', sans-serif;
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-family: 'Montserrat Black', sans-serif;
+}
+
+h5 {
+	font-family: 'Montserrat Regular', sans-serif;
+}
+
+	h5.project-title {
+		font-size: 1.2rem;
+	}
+h6 {
+	font-family: 'Montserrat Regular', sans-serif;
+}
+	h6.header-built{
+		font-family: 'Arial', sans-serif;
+		font-style: italic;
+		padding: 10px 0 27px 0;
+		font-size: 0.9rem;
+		border-bottom: 1px solid rgba(0,0,0,0.12);
+		margin: 0;
+	}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.window {
+	height: 100vh;
+}
+
+p.header-short {
+	padding-bottom: 10px
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 32px solid transparent;
+	border-right: 32px solid transparent;
+	border-top: 32px solid #18ffff;
+	margin: 0 auto 25px auto;
+}
+
+/*** NAV ***/
+
+nav#bg-none {
+	background:none;
+}
+.cd-nav .cd-primary-nav li {
+	margin: 0;
+}
+.slides-pagination {
+	background:none;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0)
+}
+
+h2.page-section-title {
+	position: absolute;
+	z-index: 3;
+}
+
+.scrolloverflow {
+	height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section {
+	padding: 0;
+}
+
+/*** WORK ***/
+
+#petsmart-slide, #loop-slide {
+	margin-top: 200px;
+}
+
+#ozio-slide, #queen-slide {
+	margin-top: 100px;
+}
+
+div#ozio-slide div p, div#loop-slide div p {
+	color: rgba(0,0,0, .87);
+} 
+
+div#loop-slide div img {
+	max-height: 575px;
+}
+
+div#ozio-slide div h4, div#loop-slide div h4 {
+	color: rgba(0,0,0, .54);
+	border-bottom: 1px solid rgba(0,0,0, .12);
+	margin-top: 15px;
+}
+
+div#queen-slide div h4 {
+	color: rgba(0,0,0, 0.54);
+	margin-top: 15px;
+	font-size: 3rem;
+}
+
+h4.work-title {
+	font-family: 'Montserrat Black', sans-serif;
+	padding: 0px 15px;
+}
+
+p.work-description {
+	font-size: 1rem;
+	padding: 10px 30px;
+	color: #000;
+	line-height: 1.4;
+	padding-bottom: 25px;
+}
+
+#queen-slide-card {
+	padding: 0px;
+}
+
+.card {
+	margin: 0;
+}
+div.project-container {
+	margin-top: 28px;
+}
+
+#journey h4 {
+	font-family: 'Montserrat Bold', sans-serif;
+	padding: 40px 0 10px 0;
+}
+
+	#journey p {
+		font-size: 1rem;
+		line-height: 1.7;
+		padding: 10px 0 10px 0;
+	}
+
+	#journey p.journey-last {
+		padding-bottom: 40px;
+		border-bottom: 1px solid rgba(0,0,0,0.12);
+	}
+
+	#journey h4.journey-bold {
+		font-family: 'Montserrat Black', sans-serif;
+		text-align: left;
+		padding-bottom: 0;
+		font-size: 2rem;
+	}
+
+	div#journey-triangle-down {
+		width: 0;
+		height: 0;
+		border-left: 32px solid transparent;
+		border-right: 32px solid transparent;
+		border-top: 32px solid #18ffff;
+		margin: 0 auto 40px auto; 
+	}
+div#knowledge h4 {
+	font-family: 'Montserrat Bold', sans-serif;
+}
+
+div#knowledge ul{
+}
+div#knowledge ul li {
+	font-size: 1rem;
+	padding: 5px 0;
+}
+div#knowledge h5 {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+	height:40px;
+}
+
+div#overlay-blur {
+	height: 100vh;
+	position:absolute;
+	background-color: grey;
+}
+blockquote.journey-quote {
+	padding: 42px 80px;
+	margin: 30px 0;
+	border-top: 1px solid rgba(0,0,0,0.12);
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	border-left: none;
+	font-size: 1.4rem;
+	font-family: 'Montserrat Regular', sans-serif; 
+	line-height: 1.4;
+}
+
+.proj-icon {
+	height: 2rem;
+	width: auto;
+	margin: 5px;
+}
+
+.video-container {
+height: -1px !important;
+}
+
+.video-max {
+	max-height: 377px;
+}
+
+.works {
+display: inline-block;
+}
+
+div#work-container {
+overflow: hidden;
+}
+
+
+/*** SIDE COLUMN ***/
+ul.side_column {
+	margin-top: 20px;
+}
+ul.side_column li {
+	margin-bottom: 35px;
+}
+
+#cd-intro {
+    position: fixed;
+    top: 70px;
+    left: 0;
   }
- h4, .brand-logo {
- 	font-family: 'Montserrat Regular', sans-serif;
- }
+  #cd-intro .cd-intro-background {
+    transform-origin: 50% 100%;
+  }
 
- h5 {
- 	font-family: 'Montserrat Hairline', sans-serif;
- }
+#slides {
+  position: relative;
+  min-height: 938px;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
- h5.title {
- 	font-family: 'Montserrat Regular', sans-serif;
- }
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
 
- h3 {
- 	font-family: 'Montserrat Black', sans-serif;
- }
- p {
- 	font-family: 'Montserrat Regular', sans-serif;
- }
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.slides-pagination a {
+  border: 2px solid #212121;
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 10px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #212121;
+}
 
- nav a#brand-logo {
- 	padding: 0 10px;
- }
-
- div.headline-bio {
- 	height: 240px;
- 	padding: 37px 0;
- }
-
- div.parallax-container {
- 	height: 300px;
- }
-
- div.project-container {
- 	margin-top: 28px;
- }
-
- .hide {
- 	display: none;
- }
-
- .proj-icon {
- 	height: 32px;
- 	width: auto;
- 	margin: 5px;
- }
-
- .video-container {
- height: -1px !important;
- }
-
- .works {
- display: inline-block;
- }
-
- div#work-container {
- overflow: hidden;
- }
+/** M **/
+@media only screen and (min-width: 601px) {
+	
+}
+/** L **/
+@media only screen and (min-width: 993px) {
+	#intro-body {
+		margin-top: 200px;
+	}
+	#intro {
+	
+	}
+}

@@ -12,6 +12,13 @@
 //
 //= require jquery
 //= require materialize-sprockets
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require velocity.min.js
+//= require velocity.ui.min.js
+//= require hammer.min.js
+//= require jquery.easing.1.3.js
+//= require jquery.animate-enhanced.min.js
+//= require jquery.superslides.min.js
 //= require_tree .

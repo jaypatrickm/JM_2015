@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'mains/index'
-
+  get '/' => 'mains#index'
+  get '/about' => 'mains#about'
+  get '/work' => 'mains#work'
   root 'mains#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
