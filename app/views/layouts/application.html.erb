@@ -11,6 +11,11 @@
 		<%= yield :jquery %>
 		 $('.materialboxed').materialbox();
 		 $('.parallax').parallax();
+		 $('#triangle-down').on('click', function() {
+		 	$('body').animate({
+		        scrollTop: $("#slides").offset().top
+		    }, 2000, 'easeInOutQuint');
+		 })
 	});
 	</script>
 </head>
@@ -24,8 +29,8 @@
 					<%= image_tag("me-1.png", :class => "circle center-align responsive-img") %>
 					<h1 class="header-name center-align">JAYPATRICK MANALANSAN</h1>
 					<h2 class="header-title">FULL STACK DEVELOPER</h2>
-					<p class="center-align header-short">Transforming ideas into beautiful visual working products focused on functionality and a great customer experience. Always thinking ahead and creating an enjoyable atmosphere during stressful times by exemplifying great work ethic combined with a smart set of social skills built upon self-awareness, selflessness, and a humble attitude. Driven by a deep eagerness to learn what it takes to succeed and become a significant asset in a major company through the practice of active listening and using strong analytical thinking. </p>
-					<h6 class="header-built">my portfolio was built using ruby on rails, materialize css, and a plugin from superslides.</h6>
+					<p class="center-align header-short">Transforming ideas into beautiful<br>visual working products.</p>
+					<h6 class="header-built">my portfolio was built using ruby on rails, materialize css,<br> and a plugin from superslides.</h6>
 					<div id="triangle-down"></div>
 				</div>
 			</div>

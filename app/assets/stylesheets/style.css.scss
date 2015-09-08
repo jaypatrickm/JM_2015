@@ -86,12 +86,13 @@ div.zindex {
   -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
 }
+/*
 div#main h1, div#main p {
   text-align: left;
-}
+}*/
 div#main h1 {
   font-size: 2.6rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 div#main p {
   font-family: "Montserrat Regular", serif;
