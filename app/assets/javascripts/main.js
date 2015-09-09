@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 		// 		isLateralNavAnimating = false;
 		// 	});
 		// }
-		console.log($(this).attr('data-location'));
+		
 		if ($(this).attr('data-location'))
 		{
 			$.ajax({
@@ -43,11 +43,11 @@ jQuery(document).ready(function($){
 			if( !isLateralNavAnimating ) {
 				if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
 				$('body').toggleClass('navigation-is-open');
-				$('.zindex').toggleClass('navigation-is-open');
+				
 				$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 					//animation is over
 					isLateralNavAnimating = false;
-					
+					$('main').toggleClass('scrolloverflow');
 				});
 			}
 		}

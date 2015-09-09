@@ -91,9 +91,7 @@ h2.page-section-title {
 }
 
 .scrolloverflow {
-	height: 100vh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+	overflow-y: auto;
 }
 
 .section {
@@ -111,7 +109,7 @@ div.work-title {
 }
 
 div#queen-mary-top {
-	background-image: url("images/qmyslide-bg-5.jpg");
+	background-image: url("qmyslide-bg-5.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
