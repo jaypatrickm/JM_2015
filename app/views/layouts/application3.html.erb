@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= yield :head %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+	$( document ).ready(function(){
+		<%= yield :jquery %>
+		 $('.materialboxed').materialbox();
+		 $('.parallax').parallax();
+		 $('#triangle-down').on('click', function() {
+		 	$('body').animate({
+		        scrollTop: $("#slides").offset().top
+		    }, 2000, 'easeInOutQuint');
+		 })
+	});
+	</script>
+</head>
+<body>
+	<div id="main" class="parallax-container zindex">
+		<section id="intro" class="window">
+			<div class="row">
+				<div id="intro-body"class="col s12 m6 offset-m3 l4 offset-l4 center-align">
+					<%= image_tag("me-1.png", :class => "circle center-align responsive-img") %>
+					<h1 class="header-name center-align">JAYPATRICK MANALANSAN</h1>
+					<h2 class="header-title">FULL STACK DEVELOPER</h2>
+					<p class="center-align header-short">Transforming ideas into beautiful<br>visual working products.</p>
+					<h6 class="header-built">my portfolio was built using ruby on rails, materialize css,<br> and a plugin from superslides.</h6>
+					<div id="triangle-down"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="zindex">
+		<div id="slides">
+			<ul class="slides-container">
+				<li class="blue-grey">
+			    	<div id="queen-slide" class="row">
+				      	<div id="queen-slide-card" class="col l6 offset-l3 slide-image-container">
+				      		<%= image_tag("qmyslide-bg-5.jpg", :class=> '') %>
+				      		<div class="card amber lighten-2">
+					    		<h4 class="work-title">QUEEN MARY WAYFINDING & TIMELINE TOUCH</h4>
+							    <div class="card-image waves-effect waves-block waves-light">
+							    	<%= image_tag("QMY-WF-1.jpg", :class => 'preserve responsive-img') %>
+							    </div>
+							    <div class="card-content amber lighten-2">
+							    	<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							    	<p class="work-description text-white">A touchscreen for guiding, entertaining, and informing visitors aboard the Queen Mary Ship. A luxurious cruise ship turned hotel permanently docked in Long Beach, CA, the Queen Mary Ship asked Insteo to build a touchscreen kiosk to show a map, timeline, various events, stores and restaurants.<a href="#" class="yellow-text text-darken-3"> &raquo; May 2013</a></p>
+							    </div>
+							    <div class="card-reveal amber lighten-2">
+							    	<span class="card-title grey-text text-darken-4">Queen Mary Wayfinding and Timeline<i class="material-icons right">close</i></span>
+							    	<%= image_tag("html5-icon.png", :class => "proj-icon preserve") %>
+									<%= image_tag("css3-icon.png", :class => "proj-icon preserve") %>
+									<%= image_tag("js-icon.png", :class => "proj-icon preserve") %>
+									<%= image_tag("jquery-icon.png", :class => "proj-icon preserve") %>
+							    	<p>Here is some more information about this product that is only revealed once clicked on.</p>
+							    </div>	
+							</div>	  			
+				      	</div>
+				    </div>
+			    </li>
+			    <li class="light-green">
+			    	<div id="ozio-slide" class="row">
+				      	<div class="col l6 offset-l3 slide-image-container">
+
+				    	<div class="card">
+				    		<h4 class="work-title">OZIO TOUCH</h4>
+					    <div class="card-image waves-effect waves-block waves-light">
+					    	<%= image_tag("OZIO-TCH-2.jpg", :class => 'preserve responsive-img') %>
+					    </div>
+					    <div class="card-content">
+					    	<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					    	<p class="work-description text-white">A multi-functional entertainment pad paired with pay-per-minute massage chairs placed throughout public malls. Insteo worked with Ozio to create a touchscreen interface to accompany their line of massage chairs.<a href="#" class="purple-text text-accent-4"> &raquo; June 2014</a></p>
+					    	<p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					    	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					    	<%= image_tag("html5-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("css3-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("js-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("jquery-icon.png", :class => "proj-icon preserve") %>
+					    	<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+				      		
+							
+							
+				  			
+				      	</div>
+				    </div>
+			    </li>
+			    <li class="white">
+			      	<div id="loop-slide" class="row">
+				      	<div class="col l3 offset-l3 slide-image-container center-align">
+				      		<%= image_tag("LOOP-AA-1.jpg", :class => 'preserve responsive-img') %>
+				      		<%= image_tag("html5-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("css3-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("js-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("jquery-icon.png", :class => "proj-icon preserve") %>
+				      	</div>
+				      	<div class="col l3">
+							<h4 class="work-title">LOOP ANIMATED AD</h4>
+				  			<p class="work-description text-white">A customizable, eye-catching, animated ad displaying in-store sales. Insteo creates digital signs for companies to use for their own products. I was tasked with creating an animated display for the convenience store Loop.<a href="#" class="blue-text text-darken-4"> &raquo; April 2013</a></p>
+					  	
+				      	</div>
+				    </div>
+			    </li>
+			    <li class="light-blue darken-4">
+			      	<div id="petsmart-slide" class="row">
+				      	<div class="col l5 offset-l2 slide-image-container">
+
+							<%= image_tag("PMT-PB-1.jpg", :class => 'preserve responsive-img') %>
+							<%= image_tag("html5-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("css3-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("js-icon.png", :class => "proj-icon preserve") %>
+							<%= image_tag("jquery-icon.png", :class => "proj-icon preserve") %>
+				      	</div>
+				      	<div class="col l3">
+							<h4 class="work-title">PETSMART PETBOARD TOUCH</h4>
+				  			<p class="work-description white-text">A touch application generating more interest and accessibility for pet adoptions, events, social media, and sales. Insteo worked with a PetSmart branch to create a PetBoard prototype.<a href="#" class="orange-text text-darken-1"> &raquo; September 2014</a></p>
+					  	
+				      	</div>
+				    </div>
+			    </li>
+			</ul>
+		</div>
+	</div>
+	<div class="parallax-container zindex">
+		<div class="parallax"><%= image_tag "bg-2.jpg" %></div>
+	</div>
+	<div id="journey" class="white zindex">
+		<div class="row">
+			<div class="col l6 offset-l3">
+				<h4 class="center-align">MY JOURNEY SO FAR...</h4>
+				<blockquote class="journey-quote cyan-text">I am very progressive when it comes to building websites and I strive to use better techniques each time I create.</blockquote>
+				<p>My interest for web design began in high school where I would constantly customize online blogs and myspace sites. I've always had a natural eye for noticing creative visual communication which has led me to discover my skills in art design through a variety of techniques.</p>
+				<p>I studied web design at the Art Institute of Orange County in CA., where I learned how to implement hierarchy, typography, grids, imagery, and wireframes, for creating company branding, e-commerce sites, thoughtful user experience & interaction, and functional interfaces. These skills led me to my first Front-End Developer job at Insteo, a digital signage company.</p>
+				<p>At Insteo, I worked as the main developer for creating their customizable web applications. I created a variety of interactive websites that were used at events, restaurants, hotels and stores.</p>
+				<p>I am very progressive when it comes to building websites and I strive to use better techniques each time I create.</p>
+				<p>I decided to pursue my dreams further and expand my knowledge in the developing side of websites. I attended the Coding Dojo in March of 2015 where I solidified my knowledge in creating an entire website from front to back.</p>
+				<p>The Coding Dojo is a 12 Week Bootcamp for learning 3 full stacks of web development. It is one of the best decisions I've ever made for myself. Weeks of morning algorithms and learning new technologies has broadened my idea of what it takes to fully create a website application.</p>
+				<h4 class="journey-bold cyan-text text-darken-4">WHO I'VE BECOME</h4>
+				<p>My experience in learning web development has given me the ability to see the bigger picture when I create a website. Previously my coding world was html, css, javascript, jquery, php and mysql, but now I can view them as parts of a LAMP stack application. I have more knowledge of different web frameworks and how they can be implemented to jumpstart an application. I can deliver you a website quickly on Ruby on Rails, give you a site built in the MEAN stack which can offer you a more real-time experience with the use of socket.io, or I can research and learn a new framework that might be more fitting for your application. Frameworks not only for back end development, but front end such as Bootstrap or Materialize can be used to help achieve a more unified design and have it work responsively.</p>
+				<p>I have a greater understanding of how MVC's work and why they exist.</p>
+				<p>I am thankful for things like GitHub, StackOverflow, CodePen, JSBin, NPM, and any number of frameworks and libraries you can find. It has given me much more appreciation for programmers, designers, and the field of web. I program with a better mindset for making my code understandable, maintainable for others, and follow customary web techniques.</p> 
+				<p>Because of my new knowledge, I have started to program with functionality first and then rework the design afterwards. Using a more methodical approach, we can build the basic functionalities of a web application and see the pieces we are able to use for design then create the right experience to generate more attraction.</p>
+				<p>I have grown as a designer to believe in the idea of practicality and ease; for me, this idea serves as a basis for creating a functional web experience that serves the user and requires user interaction only when completely necessary but must also be completely easy. I also love minimalism and high resolution images, especially free ones. I also think there's a certain charm to flat design but because it's becoming a trend, at some point you would need to consider an update. I've learned to sacrifice for time constraints and not to be too afraid to replicate. Familiarity builds trust and can strengthen the overall user experience.</p>
+				<p>Practicality and ease is also reflected through my programming. We shouldn't always feel compelled to reinvent the wheel, but we should work together and use the great wheels others have created as a foundation for a brand new product. All of these ideas have driven me to become a much more refined and resourceful web developer.</p>
+				<h4 class="journey-bold cyan-text text-darken-4">LOOKING FORWARD</h4>
+				<p class="journey-last">I look at my future with a big grin. Excited to meet and work with other programmers, designers, and directors. Eager to discover what new trends and technologies I should know and learn. My appetite for learning new languages has grown. I see myself bridging the gap between the designer and the programmer. I look forward to transcending my skills within a company and get a feel about the business side of web development. I am ready to further my career and some day become Chief Technology Officer of a big company.</p>
+				<div id="journey-triangle-down"></div>
+			</div>
+		</div>
+	</div>
+	<div class="parallax-container zindex">
+		<div class="parallax"><%= image_tag "bg-4.jpg" %></div>
+	</div>
+	<div id="knowledge" class="section zindex light-blue darken-4">
+		<div class="row">
+			<div class="col l12 center-align">
+				<h4>TOOLKIT</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col l2 offset-l1 left-align cyan-text text-accent-2">
+				<h5>Languages</h5>
+				<ul>
+					<li>HTML5</li>
+				    <li>CSS3</li>
+				    <li>Sass/Less</li>
+					<li>Javascript</li>
+					<li>PHP</li>
+				</ul>
+			</div>
+			<div class="col l2 left-align cyan-text text-accent-2">
+				<h5>Libraries &<br> Frameworks</h5>
+				<ul>
+					<li>JQuery</li>
+					<li>Bootstrap</li>
+					<li>Materialize</li>
+					<li>Ruby on Rails</li>
+					<li>CodeIgniter 3</li>
+					<li>Express.io</li>
+				    <li>Angular.js</li>
+				</ul>
+			</div>
+			<div class="col l2 left-align cyan-text text-accent-2">
+				<h5>Databases &<br> Servers</h5>
+				<ul>
+					<li>MySQL</li>
+					<li>MongoDB</li>
+					<li>SQLite</li>
+					<li>Postgres</li>
+					<li>Node.js</li>
+					<li>Apache</li>
+				</ul>
+			</div>
+			<div class="col l2 left-align cyan-text text-accent-2">
+				<h5>Techniques</h5>
+				<ul>
+					<li>Brand Identity</li>
+					<li>E-Commerce</li>
+					<li>User Experience</li>
+					<li>User Interaction</li>
+					<li>Interface Design</li>
+					<li>Responsive Web Design</li>
+					<li>REST</li>
+					<li>Content Management Systems</li>
+					<li>GitHub</li>
+				</ul>
+			</div>
+			<div class="col l2 left-align cyan-text text-accent-2">
+				<h5>Programs</h5>
+				<ul>
+					<li>Adobe Creative Suite</li>
+					<li>MAMP</li>
+					<li>MySQLWorkbench</li>
+					<li>Terminal</li>
+					<li>Sublime Text 2</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+		<span class="cd-nav-icon"></span>
+
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+	
+	<div id="cd-nav" class="cd-nav">
+		<div class="cd-navigation-wrapper">
+			<div class="cd-half-block">
+				<h2>Where can I take you?</h2>
+					<ul class="cd-primary-nav">
+						<li><a href="/start" data-location="/">Start</a></li>
+						<li><a href="/work" class="selected" data-location="/work">Work</a></li>
+						<li><a href="#0">Projects</a></li>
+						<li><a href="#0">Journey</a></li>
+					</ul>
+			</div><!-- .cd-half-block -->
+			<div class="cd-half-block">
+				<address>
+					<ul class="cd-contact-info">
+						<li><a href="mailto:jaypatrickm@gmail.com">JaypatrickM@gmail.com</a></li>
+						<li>310.308.1074</li>
+						<li>
+							<span>Located in</span>
+							<span>Bellevue, WA</span>
+						</li>
+					</ul>
+				</address>
+			</div><!-- .cd-half-block -->
+		</div><!-- .cd-navigation-wrapper -->
+	</div><!-- .cd-nav -->
+</body>
+</html>

@@ -10,27 +10,18 @@ html {
 
 h1.header-name {
 	font-family: 'Montserrat Regular', sans-serif;
+	font-size: 1.5rem;
+	margin: 0.7rem 0;
 }
 
-	h1.header-name {
-		font-size: 1.5rem;
-		margin-bottom: 0.7rem;
-		margin-top: 0.7rem;
-	}
-
-h2 {
+h2.header-title {
+	font-size: 2rem;
 	font-family: 'Montserrat Hairline', sans-serif;
 }
 
-	h2.header-title {
-		margin-top: 0;
-		font-size: 2rem;
-		font-family: 'Montserrat Hairline', sans-serif;
-	}
-
-h3.work-header {
+p.header-tag {
 	font-family: 'Montserrat Regular', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 h4 {
@@ -50,7 +41,7 @@ h6 {
 	h6.header-built{
 		font-family: 'Arial', sans-serif;
 		font-style: italic;
-		padding: 10px 0 27px 0;
+		padding: 27px 0;
 		font-size: 0.9rem;
 		border-bottom: 1px solid rgba(0,0,0,0.12);
 		margin: 0;
@@ -109,59 +100,118 @@ h2.page-section-title {
 	padding: 0;
 }
 
-/*** WORK ***/
+/**************************************
+*
+*			WORK 
+*
+***************************************/
 
-#petsmart-slide, #loop-slide {
-	margin-top: 200px;
+div.work-title {
+	padding: 60px;
 }
 
-#ozio-slide, #queen-slide {
-	margin-top: 100px;
+div#queen-mary-top {
+	background-image: url("qmyslide-bg-5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-div#ozio-slide div p, div#loop-slide div p {
-	color: rgba(0,0,0, .87);
-} 
-
-div#loop-slide div img {
-	max-height: 575px;
+div#ozio-top {
+	background-color:#8bc34a;
 }
 
-div#ozio-slide div h4, div#loop-slide div h4 {
-	color: rgba(0,0,0, .54);
-	border-bottom: 1px solid rgba(0,0,0, .12);
-	margin-top: 15px;
+div#loop-top {
+	background-color:#fb8c00;
 }
 
-div#queen-slide div h4 {
-	color: rgba(0,0,0, 0.54);
-	margin-top: 15px;
-	font-size: 3rem;
+div#petsmart-top {
+	background-color:#1565c0;
 }
 
-h4.work-title {
-	font-family: 'Montserrat Black', sans-serif;
-	padding: 0px 15px;
-}
-
-p.work-description {
-	font-size: 1rem;
-	padding: 10px 30px;
-	color: #000;
-	line-height: 1.4;
-	padding-bottom: 25px;
-}
-
-#queen-slide-card {
+div.work div.work-top {
 	padding: 0px;
 }
 
-.card {
-	margin: 0;
+div.work div.work-top div.work-title h4 {
+	display: inline;
+	font-family: 'Montserrat Bold', sans-serif;
+	font-size: 1.4em;
 }
-div.project-container {
-	margin-top: 28px;
+
+div.work div.work-top span.work-tech {
+	display: inline;
+	font-family: 'Montserrat Regular', sans-serif;
+	font-size: 1em;
 }
+div.work div.work-content {
+	background-color: #FFF;
+	padding: 20px 0px;
+}
+
+div.work div.work-content div div.work-body p {
+	font-family: 'Arial', sans-serif;
+	font-size: 0.7em;
+	line-height: 1.5;
+	padding-bottom: 12px;
+}
+
+div.work div.work-content div div.work-body p span.work-category {
+	display: block;
+	font-family: 'Montserrat Bold', sans-serif;
+	color: #006064;
+}
+
+div.work div.work-content div div.work-body p a {
+	color:#006064;
+}
+div.work div.work-content div div.work-body p a:hover {
+	color:#18ffff;
+}
+
+div.work div.work-content div div.work-body div.work-links {
+	text-align: center;
+	padding: 10px 0;
+}
+
+div.work div.work-content div div.work-body div.work-links a.work-launch {
+	border: 3px dashed #333;
+	background-color: #243040;
+	border-radius: 25px;
+	padding: 5px 28px;
+	font-family: 'Montserrat Regular', sans-serif;
+	font-size: 0.8em;
+	color: #FFF;
+	display:inline-block;
+	margin-bottom: 20px;
+}
+
+div.work div.work-content div div.work-body div.work-links a.work-launch:hover {
+	border: 3px dashed #FFF;
+	background-color: #006064;
+	border-radius: 25px;
+	padding: 5px 28px;
+	font-family: 'Montserrat Regular', sans-serif;
+	color: #FFF;
+	position: relative;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/** L **/
+@media only screen and (min-width: 993px) {
+
+
+}
+
+/**************************************
+*
+*			JOURNEY 
+*
+***************************************/
 
 #journey h4 {
 	font-family: 'Montserrat Bold', sans-serif;
